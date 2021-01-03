@@ -1,2 +1,2 @@
 # Portfolio
-This the UX portfolio for Jason Fender
+This is the UX portfolio for Jason Fender
