@@ -1,0 +1,613 @@
+html{
+  scroll-behavior: smooth;
+  }
+
+  body#about-body{
+    background: #000000 url('../images/paris-1836415.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+  body#contact-body{
+    background: #000000 url('../images/cologne-1846338.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+  body#citations-body{
+    background: #ffffff url('../images/map-3578213.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+  
+  body{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  
+  }
+
+  .text-block{
+    -webkit-text-stroke: .5px #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .about-header{
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+  }
+
+  .about-header p{
+    -webkit-text-stroke: .25px #000000;
+    font-size: 2.25em;
+  }
+  
+  h1{
+    font-size: 2.7em;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+    }
+
+  .contact-h1{
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000000;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+    }
+  
+  h2{
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .text-block h2{
+    font-size: 2.5em;
+    padding-bottom: 25px;
+  }
+
+  .contact-p{
+    font-size: 1.4em;
+    text-align: center;
+    text-shadow: 3px 3px #000000;
+    color: #ffffff;
+    padding: 15px 0 20px 0;
+  }
+
+  .paragraph-header{
+    color: #dddddd;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 15px 0;
+  }
+  
+  nav li{
+    display:inline;
+    padding-right: 20px;
+  }
+  
+  nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+  }
+
+  nav .current{
+    text-decoration: underline;
+  }
+  
+  nav a:hover, nav a:focus{
+    text-decoration: underline;
+  }
+  
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+  }
+  
+  .skip a:focus{
+    top: 0px;
+    border: 2px solid #000000;
+  }
+  
+  *:focus{
+    border: 2px solid #000000;
+  }
+  
+  nav{
+  background-color: #ddd;
+  padding: 0; 
+  text-align: left;
+  font-size: 1.25em;
+  }
+  
+  footer{
+  position: static;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 50px;
+  }
+
+  .about-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 50px;
+    }
+
+  .about p{
+    -webkit-text-stroke: .35px #000000;
+    font-size: 2em;
+    }
+
+  .citations-footer{
+    position: static;
+  }
+
+  .container{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .dosanddonts-container p{
+    font-size: 1.25em;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 25px;
+    justify-items: center;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+
+  .dosanddonts-grid{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-row-gap: 25px;
+    justify-items: center;
+    }
+
+  .wrapper{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto;
+  }
+  
+  header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    /* background-color: rgba(255,255,255,.6); */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    background-color: rgba(255,255,255,.6);
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    overflow: scroll;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    border-radius: 25px;
+    color: #000000;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    border-radius: 25px;
+    font-size: 1.25em;
+    color: #000000;
+    transform: rotateY(180deg);
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card-dosanddonts {
+  background: #000000 transparent;
+  height: 300px;
+  width: 500px;
+  border: 1px solid #f1f1f1;
+  border-radius: 25px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner-dosanddonts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-dosanddonts:hover .flip-card-inner-dosanddonts, .flip-card-dosanddonts:focus .flip-card-inner-dosanddonts {
+  transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+.flip-card-front-dosanddonts, .flip-card-back-dosanddonts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-dosanddonts {
+  -webkit-text-stroke: .25px #000000;
+  background-color: #2a5430;
+  border-radius: 25px;
+  color: #ffffff;
+  overflow: scroll;
+}
+
+/* Style the back side */
+.flip-card-back-dosanddonts {
+  -webkit-text-stroke: .25px #ffffff;
+  background-color: #b6a520;
+  border-radius: 25px;
+  color: #000000;
+  transform: rotateY(180deg);
+  overflow: scroll;
+}
+
+.flip-card-front-dosanddonts h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 20px 0 15px 0;
+  text-align: center;
+}
+
+.flip-card-back-dosanddonts h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 20px 0 15px 0;
+  text-align: center;
+}
+
+
+.flip-card-front-dosanddonts h2{
+  margin: 0 0 15px 0;
+}
+
+.flip-card-back-dosanddonts h2{
+  margin: 0 0 15px 0;
+}
+
+  .flip-card1{
+    background: #2a5430 url('../images/concept-1868728.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card2{
+    background: #b6a520 url('../images/internet-3113279.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card3{
+    background: #2a5430 url('../images/iphone-410324.jpg');
+    background-size: 100%;
+  }
+  .flip-card4{
+    background: #b6a520 url('../images/london-692137.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card5{
+    background: #2a5430 url('../images/library-869061.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card6{
+    background: #b6a520 url('../images/money-3481699.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card7{
+    background: #2a5430 url('../images/garage-3534188.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card8{
+    background: #b6a520 url('../images/dance-4271941.jpg');
+    background-size: 100%;
+  }
+
+  .flip-card9{
+    background: #2a5430 url('../images/pass-2530813.jpg');
+    background-size: 100%;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  /* background-color: #4CAF50; */
+  background-color: #1f6ac9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  /* background-color: #45a049; */
+  background-color: #0e54af;
+}
+
+/* Add a background color and some padding around the form */
+.form{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 20px;
+}
+
+.citations-about-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-about-container a {
+  font-size: 1.45em;
+}
+
+.citations-about-container a:link {
+  color: #000000;
+}
+
+.citations-about-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-travel-safely-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-travel-safely-container a {
+  font-size: 1.45em;
+  padding-bottom: 15px;
+}
+
+.citations-travel-safely-container a:link {
+  color: #000000;
+}
+
+.citations-travel-safely-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-contact-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-contact-container a {
+  font-size: 1.45em;
+}
+
+.citations-contact-container a:link {
+  color: #000000;
+}
+
+.citations-contact-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-container a {
+  font-size: 1.45em;
+}
+
+.citations-container a:link {
+  color: #000000;
+}
+
+.citations-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+  
+  @media screen and (max-width: 1000px){
+    .navbar{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    header p{
+        margin-bottom: 30px;
+    }
+    
+    .text-block{
+        margin: 60px 0 60px 0;
+    }
+  
+    nav li{
+      padding: 5px 0 5px 0;
+    }
+  
+    .flip-card, .flip-card-dosanddonts{
+      width: 350px;
+      height: 200px;
+      overflow: scroll;
+    }
+  
+    .flip-card-front, .flip-card-front-dosanddonts{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: scroll
+    }
+  
+    .flip-card-back, .flip-card-back-dosanddonts{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: scroll
+    }
+  
+    .grid, .dosanddonts-grid{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form{
+      margin: 0 0 100px 0;
+    }
+
+    footer p{
+      font-size: 1em;
+    }
+  }
+  
+  @media all and (min-width: 800px){
+  .navbar{
+    margin-bottom: 50px;
+    padding: 30px 0px;
+    text-align: left;
+  }
+
+  header p{
+    padding-bottom: 60px;
+  }
+  
+  footer p{
+    font-size: 1.25em;
+    padding: 15px 0 15px 0;
+  }
+  .form{
+    margin: 0 0 100px 0;
+  }
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+  
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+  
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+  }
